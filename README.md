@@ -1,6 +1,7 @@
 **Projekt UiPath - Automatyzacja LinkedIn**
 
 **Opis**
+
 Projekt UiPath służący do automatycznego wyciągania informacji o osobach pracujących na wybranym stanowisku (np. HR Manager) w konkretnej firmie (np. IKEA) z serwisu LinkedIn, następnie zapisując je w wybranym pliku .xlsx.
 
 **Funkcje**
