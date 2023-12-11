@@ -1,0 +1,188 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LinkedInLoginSequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uas="clr-namespace:UiPath.Activities.System;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_Browser" Type="OutArgument(ui:UiElement)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1254,1724</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>LinkedInLoginSequence_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LinkedInLoginSequence" sap:VirtualizedContainerService.HintSize="1112,1659" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:PasswordCredentials" Name="LinkedInCredentials" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="60" Credential="[LinkedInCredentials]" CredentialName="UiPath: www.linkedin.com" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password Credentials" sap:VirtualizedContainerService.HintSize="1050,175" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_1" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser for Login" sap:VirtualizedContainerService.HintSize="1050,1333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[out_Browser]" ScopeGuid="576af029-8d0f-46c8-ac1b-c2e4e5e73a0c" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,1116" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="IsLoginElementFound" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'Witaj w'" sap:VirtualizedContainerService.HintSize="954,1005" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="576af029-8d0f-46c8-ac1b-c2e4e5e73a0c" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,788" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Adres e-mail'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="576af029-8d0f-46c8-ac1b-c2e4e5e73a0c" Text="[LinkedInCredentials.Username]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://pl.linkedin.com/" DesignTimeRectangle="396, 516, 408, 55" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl aaname='                               ' parentid='main-content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                               ' parentid='main-content' tag='DIV' type='' class='text-input flex' /&gt;" Guid="915e8bd8-fbb6-4d5e-9a07-5bec172b19ec" InformativeScreenshot="571f787ddb87159cf34169446cfbb2e3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Polska: Zaloguj się lub zarejestruj' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="396, 487, 408, 21" ElementType="Text" FriendlyName="'Adres e-mail'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='input-label mb-1' aaname='           Adres e-mail lub numer telefonu         ' check:innerText='Adres e-mail lub numer telefonu' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Hasło'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="576af029-8d0f-46c8-ac1b-c2e4e5e73a0c" Text="[LinkedInCredentials.Password]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://pl.linkedin.com/" DesignTimeRectangle="396, 624, 408, 55" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'Pokaż'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='main-content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='text-input flex' parentid='main-content' tag='DIV' aaname='                                                       ' /&gt;" Guid="62ee625a-4dbe-4a63-ba88-cd22d0ae9d27" InformativeScreenshot="723fd78cfdab04e1a92172f9229588e4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Polska: Zaloguj się lub zarejestruj' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="396, 595, 408, 21" ElementType="Text" FriendlyName="'Hasło'" FullSelectorArgument="&lt;webctrl aaname='           Hasło         ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           Hasło         ' tag='LABEL' type='' class='input-label mb-1' check:innerText='Hasło' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zaloguj się'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="576af029-8d0f-46c8-ac1b-c2e4e5e73a0c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://pl.linkedin.com/" DesignTimeRectangle="396, 751, 408, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Zaloguj się'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn-md btn-primary flex-shrink-0 cursor-pointer&amp;#xA;            sign-in-form__submit-btn--full-width' aaname='           Zaloguj się         ' check:innerText='Zaloguj się' /&gt;" Guid="fcc41b47-c3dd-4662-a288-0a9fb19f4769" InformativeScreenshot="da4d21cf9eea205f3fccbea886d6bc55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Polska: Zaloguj się lub zarejestruj' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://pl.linkedin.com/" DesignTimeRectangle="396, 249, 578, 202" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Witaj w'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='main-heading text-color-text-accent-2 babybear:pb-[24px]' aaname='           Witaj w swojej społeczności specjalistów         ' check:innerText='Witaj w swojej społeczności specjalistów' /&gt;" Guid="bbe0f4a6-11e3-47a0-85d3-1a12a4859bd8" InformativeScreenshot="b87832d02b07125c106035020d7338da.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Polska: Zaloguj się lub zarejestruj' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="396, 150, 135, 34" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl class='lazy-loaded' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl class='lazy-loaded' tag='svg' type='' aaname='       ' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN0SURBVHhe7ZsxihRRGIT3CHsEj+ARPIJH8AiCqcEmhoKRqYaGi4kIBotgooEbbCIoiCAmImuiYNK+ejst9fdfs9XPXnCmnwUf7Kupmtn/TXfP7EIfDMPQNdLsCWn2hDR7Qprg4M7To8J5YdhzMANmOZRzJqMEC6cF9WT7zOl01jpvMi52Sz3BGjhK8yZjHYf9Ns7TvMnQxdWQ5k2GKK2JNG8yRElx4+Gr4ej5uwp+VpldJM2bDFFiMOzHbz9KNArePmxEUZw3GaI0ggGddn0TiuK8yRClEfXOT4WM6u4KRXHeZIgSmPPuj9rlo6AozpsMUQK42M0Vsuo5doGiOG8yRAl0vwHdnwKg64sgmHMU7PK7D4rivMkQJQYDqiMB3q4PD4rivMkQJQWGxcUO7MPgI2neZIjSmkjzJkOU/gU4qsaj7Oaj13/Wh3efyfxc0rzJECXGqSU//b6AAY/Pvmwe3S5cb9D9m80oivMmQ5QYp5b8uAHX7r0YTt5/3bjzdf7z13Drydv0mpdRFOdNhigxTi15bMD1+yd1kCVq2YSiOG8yRIlxasnjcF86/CicPtPXVhTFeZMhSoxTa/6qhFNo+tqKojhvMkSJcWrNX6VwOk1ff0pRnDcZosQ4teavUtNPFUVRnDcZosQ4teanwjUBh/PI6efvm0e85pwGRXHeZIgS49SaH3XZRxoucHM2As+h+kxRnDcZosQ4teYh/OLu/MXjc6S6DCJMWFRDlBin1jw093P88ZtPm8Z2qR6DCBMW1RAlxqk13/IPlNvHZ5vWdqkegwgTFtUQJcapNf/g5YfU2QauBU6qxyDChEU1RIlxas3jL71pZxur3IC5X2FB9xsAnFSHQYQJi2qIEuO0NO9wUh0GESYsqiFKjNPSvMNJdRhEmLCohigxTkvzDifVYRBhwqIaosQ4Lc07nFSHQYQJi2qIEuO0NO9wUh0GESYsqiFKjNPSvMNJdRhEmLCohigxTkvzDifVYRBhwqIaosQ4Lc07nFSHQYQJi2qIEuO0NO9wUh0GESYsqiFKjNPSvMNJdRhEmLCohigxTkvzDifVYRBhwqIaosQ4Lc07nFSHQYQJi2qI0ppI8yZDlNZEmjcZorQm0rzJEKU1keZNxv8bJjq/ZaaaPd80Vc2LO8dWdducmhNIsyek2RPS7Alp9sNw8BsApZQX8V/lIAAAAABJRU5ErkJggg==" InformativeScreenshot="b08fe502a534f122992e760652520fbd.jpg" Selector="&lt;html app='chrome.exe' title='LinkedIn Polska: Zaloguj się lub zarejestruj' /&gt;" Title="LinkedIn: Zaloguj się lub zarejestruj" Url="https://pl.linkedin.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
