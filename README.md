@@ -9,3 +9,7 @@ Projekt UiPath służący do automatycznego wyciągania informacji o osobach pra
 - Logowanie do LinkedIn.
 - Wyszukiwanie osób na podstawie podanych kryteriów.
 - Ekstrakcja i zapis danych do pliku Excel.
+
+**Video z pracy**
+https://github.com/KStachurski/UIPath-LinkedIn-Robot/assets/129693222/f8ce940b-e856-42ad-b81a-c079240a7643
+
